@@ -1,6 +1,6 @@
 class  SearchResultsSortPanel {
 
-  LowestPriceSelector = '[data-filter="sort=sale_price:num:true"]';
+  LowestPriceSelector = '[data-filter="sort=sale_price:num:false"]';
   
     sortPanel() {
       // click on the "en düşük fiyat" button

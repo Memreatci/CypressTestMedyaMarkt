@@ -15,6 +15,7 @@ class SearchField {
         cy.get(this.afterSearchCookiesSelector).click().wait(2000);
         // Cllicked the search button
         cy.get(this.searchButtonSelector).click({ multiple: true });
+        cy.wait(2000);
     };
 
     searchListResultsContainQuery(searchQuery) {
