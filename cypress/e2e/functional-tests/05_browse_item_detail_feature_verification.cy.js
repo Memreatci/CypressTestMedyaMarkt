@@ -1,5 +1,6 @@
 import dataSearch from '../../fixtures/dataSearch.json';
 import mainpage from '../../pages/mainPage';
+import itemdeatil from '../../pages/itemDetailsPage';
 
 describe('User should search for an item and get appropriate results: items in result list should have query in the titles', () => {
 
@@ -14,7 +15,6 @@ describe('User should search for an item and get appropriate results: items in r
     mainpage.SearchBar(searchQuery);
 
     itemdeatil.itemDetailsPage();
-
 
   });
 });

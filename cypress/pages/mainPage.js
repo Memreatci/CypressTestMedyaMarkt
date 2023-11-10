@@ -2,10 +2,11 @@ import SearchField from "../components/searchField";
 
 class MainPage {
 
+  host = 'https://www.mediamarkt.com.tr/';
   PrivacyPolicySettingsSelector = '.cookie-info-accept-button.js-cookie-info-accept-button.button';
   
   GoToWebsite() {
-    cy.visit('https://www.mediamarkt.com.tr/');
+    cy.visit(this.host);
   };
 
   PrivacyPolicySettingsAccept() {
